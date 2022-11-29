@@ -8,8 +8,33 @@
    "category": "TS - Guest Configuration",
    "createdBy": "48f7f406-0287-4e09-b80c-3987635946c7",
    "createdOn": "2022-11-29T08:39:28.2394392Z",
-   "updatedBy": null,
-   "updatedOn": null
+   "requiredproviders": [
+    "Microsoft.GuestConfiguration"
+  ],
+  "guestConfiguration": {
+    "name": "AzureBaseline_WindowsFirewallProperties",
+    "version": "1.*",
+    "configurationParameter": {
+      "WindowsFirewallDomainUseProfileSettings": "Windows Firewall: Domain: Firewall state;ExpectedValue",
+      "WindowsFirewallDomainBehaviorForOutboundConnections": "Windows Firewall: Domain: Outbound connections;ExpectedValue",
+      "WindowsFirewallDomainApplyLocalConnectionSecurityRules": "Windows Firewall: Domain: Settings: Apply local connection security rules;ExpectedValue",
+      "WindowsFirewallDomainApplyLocalFirewallRules": "Windows Firewall: Domain: Settings: Apply local firewall rules;ExpectedValue",
+      "WindowsFirewallDomainDisplayNotifications": "Windows Firewall: Domain: Settings: Display a notification;ExpectedValue",
+      "WindowsFirewallPrivateUseProfileSettings": "Windows Firewall: Private: Firewall state;ExpectedValue",
+      "WindowsFirewallPrivateBehaviorForOutboundConnections": "Windows Firewall: Private: Outbound connections;ExpectedValue",
+      "WindowsFirewallPrivateApplyLocalConnectionSecurityRules": "Windows Firewall: Private: Settings: Apply local connection security rules;ExpectedValue",
+      "WindowsFirewallPrivateApplyLocalFirewallRules": "Windows Firewall: Private: Settings: Apply local firewall rules;ExpectedValue",
+      "WindowsFirewallPrivateDisplayNotifications": "Windows Firewall: Private: Settings: Display a notification;ExpectedValue",
+      "WindowsFirewallPublicUseProfileSettings": "Windows Firewall: Public: Firewall state;ExpectedValue",
+      "WindowsFirewallPublicBehaviorForOutboundConnections": "Windows Firewall: Public: Outbound connections;ExpectedValue",
+      "WindowsFirewallPublicApplyLocalConnectionSecurityRules": "Windows Firewall: Public: Settings: Apply local connection security rules;ExpectedValue",
+      "WindowsFirewallPublicApplyLocalFirewallRules": "Windows Firewall: Public: Settings: Apply local firewall rules;ExpectedValue",
+      "WindowsFirewallPublicDisplayNotifications": "Windows Firewall: Public: Settings: Display a notification;ExpectedValue",
+      "WindowsFirewallDomainAllowUnicastResponse": "Windows Firewall: Domain: Allow unicast response;ExpectedValue",
+      "WindowsFirewallPrivateAllowUnicastResponse": "Windows Firewall: Private: Allow unicast response;ExpectedValue",
+      "WindowsFirewallPublicAllowUnicastResponse": "Windows Firewall: Public: Allow unicast response;ExpectedValue"
+    }
+  }
   },
   "parameters": {
    "IncludeArcMachines": {
